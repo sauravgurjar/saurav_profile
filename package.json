@@ -2,6 +2,7 @@
   "name": "saurav_profile",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sauravgurjar.github.io/saurav_profile",
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.11",
     "@testing-library/dom": "^10.4.1",
