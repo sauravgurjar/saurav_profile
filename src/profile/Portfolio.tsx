@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Mail, Phone, MapPin, Calendar, Linkedin, Twitter, Instagram, Github, Send, Code, Palette, Cloud, Cpu } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Mail, Phone, MapPin, Calendar, Linkedin, Youtube, Instagram, Github, Send, Code, Palette, Cloud, Cpu } from 'lucide-react';
 
 const Portfolio = () => {
     const [activeSection, setActiveSection] = useState('about');
@@ -61,56 +62,24 @@ const Portfolio = () => {
             icon: "⚛️",
             date: "July 28, 2025",
             readTime: "5 min read",
-            title: "The Future of React: Server Components and Beyond",
-            excerpt: "Exploring the latest developments in React Server Components and how they're revolutionizing the way we build modern web applications...",
-            tags: ["React", "Server Components", "Next.js"]
+            title: "🚀 The Rise of AI Agents: How They're Changing the Future of Work",
+            excerpt: "Exploring the latest developments in...",
+            tags: ["AutoGPT", "LangChain CrewAI", "Next.js"],
+            url: "/ai"
         },
         {
-            category: "Design",
+            category: "Tech",
             icon: "🎨",
             date: "July 22, 2025",
             readTime: "8 min read",
-            title: "Designing for Accessibility: A Developer's Guide",
-            excerpt: "Why accessibility should be at the forefront of every development project and practical tips for implementing inclusive design patterns...",
-            tags: ["Accessibility", "UX", "Web Standards"]
+            title: " 📺 How YouTube Supports 2.19 Billion Users with MySQL: Scaling the Unsung Hero",
+            excerpt: "Why accessibility should be at the forefront...",
+            tags: ["MySQL", "BigQuery", "Vitess"],
+            url: "/youtube"
         },
-        {
-            category: "Development",
-            icon: "🚀",
-            date: "July 15, 2025",
-            readTime: "6 min read",
-            title: "Building Scalable APIs with Node.js and TypeScript",
-            excerpt: "A comprehensive guide to creating robust, type-safe APIs that can handle growth and maintain code quality over time...",
-            tags: ["Node.js", "TypeScript", "API Design"]
-        },
-        {
-            category: "Career",
-            icon: "💼",
-            date: "July 8, 2025",
-            readTime: "4 min read",
-            title: "From Bootcamp to Senior Developer: My Journey",
-            excerpt: "Reflecting on the challenges, breakthroughs, and lessons learned during my transition from a coding bootcamp graduate to a senior developer...",
-            tags: ["Career", "Learning", "Personal Growth"]
-        },
-        {
-            category: "Tutorial",
-            icon: "📚",
-            date: "June 30, 2025",
-            readTime: "12 min read",
-            title: "Mastering CSS Grid: Advanced Layout Techniques",
-            excerpt: "Deep dive into CSS Grid with practical examples, advanced techniques, and real-world use cases for creating complex layouts...",
-            tags: ["CSS", "Grid", "Layout"]
-        },
-        {
-            category: "AI/ML",
-            icon: "🤖",
-            date: "June 25, 2025",
-            readTime: "10 min read",
-            title: "Integrating AI into Web Applications: Practical Examples",
-            excerpt: "How to incorporate machine learning and AI features into your web applications without the complexity, featuring real examples and code...",
-            tags: ["AI", "Machine Learning", "JavaScript"]
-        }
+
     ];
+
 
     const projects = [
         {
@@ -242,16 +211,16 @@ const Portfolio = () => {
 
                         {/* Social Links */}
                         <div className="flex justify-center gap-4">
-                            <a href="#" className="w-11 h-11 bg-white/5 border border-gray-800 rounded-xl flex items-center justify-center text-gray-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-orange-500 hover:text-white transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30">
+                            <a href="https://www.linkedin.com/in/saurav-singh-750384230/" className="w-11 h-11 bg-white/5 border border-gray-800 rounded-xl flex items-center justify-center text-gray-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-orange-500 hover:text-white transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30">
                                 <Linkedin className="w-5 h-5" />
                             </a>
-                            <a href="#" className="w-11 h-11 bg-white/5 border border-gray-800 rounded-xl flex items-center justify-center text-gray-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-orange-500 hover:text-white transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30">
-                                <Twitter className="w-5 h-5" />
+                            <a href="https://www.youtube.com/@SauravSingh-it2wz" className="w-11 h-11 bg-white/5 border border-gray-800 rounded-xl flex items-center justify-center text-gray-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-orange-500 hover:text-white transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30">
+                                <Youtube className="w-5 h-5" />
                             </a>
-                            <a href="#" className="w-11 h-11 bg-white/5 border border-gray-800 rounded-xl flex items-center justify-center text-gray-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-orange-500 hover:text-white transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30">
+                            <a href="https://www.instagram.com/saurav_singh_gujar/" className="w-11 h-11 bg-white/5 border border-gray-800 rounded-xl flex items-center justify-center text-gray-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-orange-500 hover:text-white transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30">
                                 <Instagram className="w-5 h-5" />
                             </a>
-                            <a href="#" className="w-11 h-11 bg-white/5 border border-gray-800 rounded-xl flex items-center justify-center text-gray-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-orange-500 hover:text-white transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30">
+                            <a href="https://github.com/sauravgurjar" className="w-11 h-11 bg-white/5 border border-gray-800 rounded-xl flex items-center justify-center text-gray-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-orange-500 hover:text-white transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30">
                                 <Github className="w-5 h-5" />
                             </a>
                         </div>
@@ -324,10 +293,10 @@ const Portfolio = () => {
 
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                                 {blogPosts.map((post, index) => (
-                                    <article
+                                    <Link
                                         key={index}
-                                        className="bg-white/5 border border-gray-800 rounded-2xl overflow-hidden hover:border-cyan-400 transform hover:-translate-y-2 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 cursor-pointer group"
-                                        onClick={() => alert(`Opening "${post.title}"...\n\nThis would normally navigate to the full blog post!`)}
+                                        to={`/blog/${post.url}`} // Change this as per your route setup
+                                        className="bg-white/5 border border-gray-800 rounded-2xl overflow-hidden hover:border-cyan-400 transform hover:-translate-y-2 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 cursor-pointer group block"
                                     >
                                         <div className="h-44 bg-gradient-to-br from-cyan-400/10 to-orange-500/10 flex items-center justify-center relative overflow-hidden">
                                             <div className="absolute top-4 left-4 bg-gradient-to-r from-cyan-400 to-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">
@@ -340,7 +309,9 @@ const Portfolio = () => {
                                         <div className="p-6">
                                             <div className="flex justify-between items-center mb-4 text-xs text-gray-400">
                                                 <span className="text-cyan-400 font-medium">{post.date}</span>
-                                                <span className="bg-white/5 px-2 py-1 rounded-lg border border-gray-800">{post.readTime}</span>
+                                                <span className="bg-white/5 px-2 py-1 rounded-lg border border-gray-800">
+            {post.readTime}
+          </span>
                                             </div>
                                             <h3 className="text-lg font-semibold mb-3 text-white group-hover:text-cyan-400 transition-colors line-clamp-2">
                                                 {post.title}
@@ -352,14 +323,16 @@ const Portfolio = () => {
                                                         key={tagIndex}
                                                         className="bg-cyan-400/10 text-cyan-400 px-3 py-1 rounded-full text-xs font-medium border border-cyan-400/20"
                                                     >
-                            {tag}
-                          </span>
+              {tag}
+            </span>
                                                 ))}
                                             </div>
                                         </div>
-                                    </article>
+                                    </Link>
                                 ))}
                             </div>
+
+
                         </section>
                     )}
 
